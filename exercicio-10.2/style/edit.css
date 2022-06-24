@@ -1,0 +1,96 @@
+/*modal*/
+#edit {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+#edit-content {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+#edit-content img {
+    height: 60vh;
+    width: auto;
+    padding: 0 0 0 2.5vw;
+}
+
+#inputs {
+    width: 50%;
+    height: 100%;
+    padding: 3vw 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#close2 {
+    padding: 1.5vw;
+    height: 100%;
+}
+
+#edit svg {
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+#edit svg:hover {
+    color: rgba(0, 0, 0, 0.681);
+}
+
+#inputs .input {
+    width: 20vw;
+    height: 6vh;
+    border: 1px solid rgba(0, 55, 61);
+    color: rgba(0, 55, 61);
+    padding-left: 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+
+#inputs .input::placeholder {
+    color: rgba(0, 55, 61);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#inputs .input:hover {
+    transition: 0.3 all;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+/*buttons*/
+#edit input[type = 'button'] {
+    width: 20vw;
+    height: 6.5vh;
+    text-transform: uppercase;
+    background-color: rgba(0, 55, 61);
+    border: 2px solid rgba(0, 55, 61);
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#edit input[type = 'button']:hover {
+    color: rgba(0, 55, 61);
+    background-color: transparent;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Produtos</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/list.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./style/edit.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--header-->
+    <header id="header">
+        <figure id="logo-container">
+            <img src="./assets/images/logo.svg" alt="logo">
+        </figure>
+        <section id="name-login">
+            <h1>Yayoi</h1>
+        </section>
+        <figure id="sandwich-menu">
+            <img src="./assets/images/menu-sandwich.svg" alt="sandwich-menu">
+        </figure>
+    </header>
+
+    <main>
+        
+        <!--home-->
+        <section id="home">
+            <section id="home-content">
+                <img src="./assets/images/fish-container.svg" alt="fish-image">
+                <h1>Welcome to <br /> Yayoi</h1>
+                <p>contemporary japanese cuisine</p>
+            </section>
+        </section>
+
+        <!--register-->
+        <section id="imediate-book-container">
+            <section id="imediate-book">
+                <section id="imediate-book-text">
+                    <figure id="imediate-book-icons-container">
+                        <img src="./assets/images/imediate-book.svg" alt="events icons">
+                    </figure>
+                    <h1>Adicionar Produtos</h1>
+                    <p>Adicione produtos preenchendo os campos abaixo e verifique os produtos listados.</p>
+                    <form id="imediate-book-form">
+                        <span id="feedback">Aguardando mensagemAguardando mensagem</span>
+                        <input type="text" name="name" id="name" class="input" placeholder="Nome do produto."/>
+                        <input type="text" name="description" id="description" class="input" placeholder="Descrição do produto." />
+                        <input type="text" name="price" id="price" class="input" placeholder="Valor do produto."/>
+                        <input type="button" id="cadastre" class="button" value="Incluir Produto"/>
+                        <input type="button" id="list-view" class="button" value="Listar Produtos"/>
+                    </form>
+                </section>
+                <figure id="imediate-book-image-container">    
+                    <img src="./assets/images/book-now.webp" alt="restaurant plate image">
+                </figure>
+            </section>
+        </section>
+
+        <!--list-->
+        <section id="booking-container">
+            <section id="booking">
+                <!--products list-->
+                <h1>Lista de Produtos</h1>
+                <div style="display: flex; padding: 2.5vh 0;">
+                    <input id="search-bar" type="text" placeholder="Pesquisar..."/>
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <table id="product-list">
+                    <thead>
+                        <tr id="product-header">
+                            <th id="name-th">Nome</th>
+                            <th id="price-th">Valor</th>
+                            <th>Editar</th>
+                            <th>Apagar</th>
+                        </tr>
+                    </thead>  
+                </table>
+                <figure id="booking-image-container">
+                    <img src="./assets/images/book-image.webp" alt="sushi plate">
+                    <img src="./assets/images/bottom-icon.svg" alt="bottom icon">
+                </figure>
+            </section>
+        </section>
+
+        <!--modal-->
+        <section id="modal">
+            <div id="modal-content">
+                <img src="./assets/images/events-image.webp" alt="sushi plate">
+                <div id="modal-text">
+                    <h1>Detalhes do Produto</h1>
+                    <span id="id-modal"></span>
+                    <span id="name-modal"></span>
+                    <span id="description-modal"></span>
+                    <span id="price-modal"></span>
+                    <span id="include-modal"></span>
+                </div>
+                <div id="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!--edit section-->
+        <section id="edit">
+            <div id="edit-content">
+                <img src="./assets/images/events-image.webp" alt="sushi plate">
+                <div id="inputs">
+                    <h1>Editar Produto</h1>
+                    <span id="feedback2">Aguardando mensagemAguardando mensagem</span>
+                    <input type="text" name="name" id="name-edit" class="input" placeholder="Editar nome."/>
+                    <input type="text" name="description" id="description-edit" class="input" placeholder="Editar descrição." />
+                    <input type="number" name="price" id="price-edit" class="input" placeholder="Editar valor."/>
+                    <input type="button" id="change" class="button" value="Alterar Produto"/>
+                </div>
+                <div id="close2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"/></svg>
+                </div>
+            </div>
+        </section>
+ 
+    </main>
+
+    <!--script-->
+    <script src="./script/script.js"></script>
+    <script src="https://kit.fontawesome.com/088a0687c8.js" crossorigin="anonymous"></script>
+</body>
+</html>

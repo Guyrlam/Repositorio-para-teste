@@ -1,0 +1,112 @@
+/*booking*/
+#booking-container {
+    background-color: rgba(0, 55, 61);
+    width: 100vw;
+    border: 1px solid white;
+    border-right: none;
+    border-left: none;
+    display: none;
+    justify-content: start;
+    padding-left: 7.25vw;
+}
+
+#booking {
+    width: 84.27vw;
+    height: fit-content;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0 15vh;
+}
+
+/*products list*/
+#booking h1 {
+    font-size: 1.85vw;
+    font-weight: 400;
+}
+
+#product-list th, #product-list td {
+    width: 15vw;
+    height: 6vh;
+}
+
+#product-list th {
+    font-weight: 300;
+}
+
+#product-list td {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.name-cell:hover, .material-icons:hover {
+    transition: 0.3s all;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+/*booking image*/
+#booking-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-top: 10vh;
+}
+
+#booking-image-container :first-child {
+    width: 62.25vw;
+    height: auto;
+}
+
+#booking-image-container :last-child {
+    position: absolute;
+    top: 76.5vh;
+    height: auto;
+    width: 8.14vw;
+}
+
+#name-th, #price-th {
+    cursor: pointer;
+}
+
+/*search*/
+#search-bar {
+    width: 60vw;
+    height: 6vh;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.605);
+}
+
+#search-button {
+    width: 6vh;
+    height: 6vh;
+    border: 1px solid white;
+    background-color: white;
+    color:rgba(0, 55, 61);
+    transition: 0.3s all;
+    cursor: pointer;
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#search-button:hover {
+    color: white;
+    background-color:rgba(1, 82, 90, 0.45);
+}

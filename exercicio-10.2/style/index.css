@@ -1,0 +1,16 @@
+/*geral config*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body config*/
+body {
+    font-family: 'Inknut Antiqua', serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+

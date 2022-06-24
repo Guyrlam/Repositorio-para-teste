@@ -1,0 +1,61 @@
+/*modal*/
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+#modal-content {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+#modal-content img {
+    height: 60vh;
+    width: auto;
+    padding: 0 0 0 2.5vw;
+}
+
+#modal-text {
+    width: 50%;
+    height: 100%;
+    padding: 3vw 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#modal-text h1 {
+    padding-bottom: 4vh;
+}
+
+#modal-text span {
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#close {
+    padding: 1.5vw;
+    height: 100%;
+}
+
+#modal svg {
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+#modal svg:hover {
+    color: rgba(0, 0, 0, 0.681);
+}
