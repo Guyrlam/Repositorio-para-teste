@@ -1,0 +1,37 @@
+/*initial page*/
+#initial-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+    justify-content: center;
+}
+
+#initial-page h1 {
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+
+#initial-page p {
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+.select{
+    width: 35vw;
+    height: 8vh;
+    border: 1px solid black;
+    font-size: 1.8vw;
+    display: flex;
+    padding-left: 4vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+#city div {
+    color: gray;
+    border-color: gray;
+    padding-left: 4.5vw;
+}
